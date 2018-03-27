@@ -1,2 +1,0 @@
-# ESports-stats
-group project
