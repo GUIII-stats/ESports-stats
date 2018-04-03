@@ -16,9 +16,9 @@
 </ul>
 
 
-<img src="images/splyce.jpg">
-    <p> 2018 Roster </p>
-    
+<img class="team-logo" src="images/splyce.jpg">
+<h3>Splyce</h3>
+
     <div class="grid-container">
         <div class="grid-item"><a href="Solar.html">Solar</a>
             <img src="images/solar.jpg">
@@ -30,42 +30,50 @@
             <img src="images/ty.jpg">
         </div>
     </div>
-    
+
 <style>
-    body{
-	background-color: black;
-    } 
-    h1{
-        font-size: 300%;
-        font-family: impact;
-        text-align: center;
-        text-decoration: underline overline;
-        font-style: bold;
-        
-    }
+h1{
+    font-size: 300%;
+    font-family: impact;
+    text-align: center;
+    text-decoration: underline overline;
+    font-style: bold;
 
-    p{
-	color: white;
-        font-size: 200%;
-        font-family: Verdana;
-        font-weight: bold;
-        text-align: center;
-        margin-left: 10px;
-        margin-right: auto;
-        background-color: black;
+}
+h3{
+  font-size: 40px;
+  font: black;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
 
-    }
+p{
+    color: white;
+    font-size: 200%;
+    font-family: Verdana;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: auto;
+
+}
+.team-logo{
+  height: 35;
+  width: 45;
+  text-align: center;
+  margin: none;
+  padding: none;
+}
 
 .grid-container
 {
+    margin-top: 20px;
     display: grid;
     grid-template-columns: auto auto auto;
-    background-color: black;
     padding: 10px;
 }
 .grid-item {
-    background-color: black;
-    border: 1px solid rgba(0, 0, 0, 0.8);
     font-family: verdana;
     padding: 20px;
     font-size: 30px;
@@ -103,18 +111,19 @@ li a {
 li a:hover
 {
     background-color: grey;
-    padding-left: 10px;
+    padding-left: 20px;
+    padding-bottom: 21px;
 }
 
 img {
-    background-color: black;
-    padding-top: 15px;
+    padding-top: 10px;
     padding-bottom: 0px;
     display: block;
     height: 35;
-    width: 35;
+    width: 45;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: none;
 }
 
 
