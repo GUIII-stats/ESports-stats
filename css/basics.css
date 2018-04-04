@@ -1,7 +1,3 @@
-@font-face{
-  font-family: 'starfont';
-  src:url(/fonts/starcraft.tff)format('tff');
-}
 
 h1{
     font-size: 300%;
@@ -9,12 +5,22 @@ h1{
     text-align: center;
     text-decoration: underline overline;
     font-style: bold;
+    margin-bottom: 10px;
+}
+
+@font-face{
+  font-family: 'starfont';
+  src: url(../fonts/starcraft-webfont.woff);
 }
 
 h2{
   font-size: 200%;
+  color: black;
+  margin: 5px;
+  padding: 0px;
+  text-decoration: underline overline;
   font-family: starfont;
-  text-align: center;
+  text-align: left;
 }
 
 
