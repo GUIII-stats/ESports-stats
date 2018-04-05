@@ -7,6 +7,9 @@ h1{
     font-style: bold;
     margin-bottom: 10px;
 }
+h1 a{
+  color:black;
+}
 
 @font-face{
   font-family: 'starfont';
@@ -15,7 +18,7 @@ h1{
 
 h2{
   font-size: 200%;
-  color: black;
+  color: white;
   margin: 5px;
   padding: 0px;
   text-decoration: underline overline;
@@ -33,16 +36,33 @@ ul {
 }
 
 li {
-float: left;
+  color: purple;
 }
 
 li a {
+float: left;
 display: block;
 color: white;
 font-family: arial;
 text-align: center;
 padding: 20px 20px;
 text-decoration: none;
+}
+li.title {
+  padding:9px;
+  float: right;
+}
+li.search{
+  float: left;
+  display: block;
+  color: black;
+  font-family: arial;
+  padding: 15px ;
+}
+input[type=text]{
+  width:160px;
+  height:20px;
+  font-size: 15px;
 }
 
 li a:hover
