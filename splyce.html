@@ -5,6 +5,7 @@
 </title>
 <head>
 <link rel="stylesheet" href="./css/basics.css">
+<link rel="stylesheet" href="./css/gallery.css">
 </head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <h1><a href="esportsmain.html">ESports Stats</a></h1>
@@ -20,18 +21,20 @@
 
 <img class="team-logo" src="images/splyce.jpg">
 <h3>Splyce</h3>
-
-    <div class="grid-container">
-        <div class="grid-item"><a href="Solar.html">Solar</a>
-            <img src="images/solar.jpg">
-        </div>
-        <div class="grid-item"><a href="Stats.html">Stats</a>
-            <img src="images/stats.jpg">
-        </div>
-        <div class="grid-item"><a href="Ty.html">TY</a>
-            <img src="images/ty.jpg">
-        </div>
+  <div class="gallery">
+    <a href="Solar.html"><img src="images/solar.jpg">
+      <div class="desc">Solar</div></a>
     </div>
+
+    <div class="gallery">
+      <a href="Stats.html"><img src="images/stats.jpg">
+        <div class="desc">Stats</div></a>
+      </div>
+
+    <div class="gallery">
+      <a href="Ty.html"><img src="images/ty.jpg">
+        <div class="desc">Ty</div></a>
+      </div>
 
 <style>
 h3{
@@ -41,56 +44,19 @@ h3{
   padding: 0px;
   text-align: center;
 }
-
-p{
-    color: white;
-    font-size: 200%;
-    font-family: Verdana;
-    font-weight: bold;
-    text-align: center;
-    margin-left: 10px;
-    margin-right: auto;
-
+div a{
+  color: black;
 }
-.team-logo{
+
+img.team-logo{
+  display: block;
   height: 35;
   width: 45;
-  text-align: center;
-  margin: none;
-  padding: none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
-
-.grid-container
-{
-    margin-top: 20px;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    padding: 10px;
-}
-.grid-item {
-    font-family: verdana;
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
-}
-
-.grid-item img {
-    height:150px;
-    width: 150px;
-    padding: 5px;
-}
-
-img {
-    padding-top: 0px;
-    padding-bottom: 0px;
-    display: block;
-    height: 35;
-    width: 45;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: none;
-}
-
 
 
 </style>
