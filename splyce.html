@@ -18,9 +18,11 @@
     <li class="title"><h2>StarCraft II</h2></li>
 </ul>
 
-
-<img class="team-logo" src="images/splyce.jpg">
-<h3>Splyce</h3>
+<div class="left">
+  <img class="team-logo" src="images/splyce.jpg">
+  <h3>Splyce</h3>
+</div>
+<div class="right">
   <div class="gallery">
     <a href="Solar.html"><img src="images/solar.jpg">
       <div class="desc">Solar</div></a>
@@ -35,27 +37,40 @@
       <a href="Ty.html"><img src="images/ty.jpg">
         <div class="desc">Ty</div></a>
       </div>
+</div>
 
 <style>
 h3{
+  color: #333;
   font-size: 40px;
   font: black;
   margin: 0px;
   padding: 0px;
   text-align: center;
+  text-decoration: underline;
 }
 div a{
   color: black;
 }
 
+div.left{
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+div.right{
+  width: 50%;
+  height: 100%;
+  float: right;
+}
+
 img.team-logo{
   display: block;
-  height: 35;
-  width: 45;
+  height: 200px;
+  width: 200px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 100px;
 }
 
 
