@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<title>PlayerCard</title>
+<head>
+  <link rel="stylesheet" href="./css/basics.css">
+  <link rel="stylesheet" href="./css/gallery.css">
+</head>
+
+<h1><a href="esportsmain.html">ESports Stats</a></h1>
+<ul>
+    <li><a href="esportsmain.html">eSports</a></li>
+    <li><a href="home.html"> Home </a> </li>
+    <li><a class ="active" href="teams.html"> Teams</a> </li>
+    <li><a href="rankings.html"> Rankings</a> </li>
+    <li class="search"><input type="text" name="search" placeholder="Search.."></li>
+    <li class="title"><h2>StarCraft II</h2></li>
+</ul>
+
+
+<div class="bio">
+ <img class="player" src="images/ty.jpg"></img>
+ <a href = splyce.html>
+   <img class="logo"  src="images/splyce.jpg"></img>
+ </a>
+ <h3> Jun "TY" Tae Yang - Team Splyce </h3>
+ <p> Entering the professional gaming world at the age of 12, TY was one of the youngest professional gamers ever. After an up and down start to his career, TY found himself with enough points after a solid 2016 year to earn himself a spot at the 2016 playoffs at BlizzCon. </p>
+</div>
+
+<div class="stats">
+  <div class="basics">
+    <table class="basics">
+      <h4>Basics</h4>
+    	<tr>
+    		<th> Race </th>
+      </tr>
+      <tr>
+        <td><img class="rSymbol" src="./images/zerg_logo.svg"> Zerg</td>
+      <tr>
+    		<th> World Ranking </th>
+      </tr>
+      <tr>
+        <td>5th</td>
+      </tr>
+      <tr>
+        <th> Longest Win Streak </th>
+    	</tr>
+      <tr>
+        <td>11</td>
+      </tr>
+    </table>
+  </div>
+  <div class="matchups">
+    <h4>Match Ups</h4>
+    <table class="matchups">
+      <tr>
+        <th> vs. Protoss </th>
+        <th> vs. Terran </th>
+        <th> vs. Zerg </th>
+      </tr>
+      <tr>
+    		<td> 2-0 </td>
+    		<td> 7-1 </td>
+    		<td> 1-2 </td>
+      </tr>
+      <tr>
+        <th> Current Streak </th>
+        <th> Next Match </th>
+        <th> Last Match </th>
+      </tr>
+      <tr>
+        <td> W2 </td>
+        <td> TBD </td>
+        <td> vs. GuMiho (Terran, W2-0) </td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+
+<div class="news">
+  <h4>Vidoes</h4>
+  <div class="gallery">
+    <a href="https://splyce.gg/content/677/the-battle-for-blizzcon-stats-and-ty"><img src="images/splyce.PNG">
+      <div class="desc">The Battle for BlizzCon: Stats and TY</div></a>
+  </div>
+  <div class="gallery">
+    <a href="https://splyce.gg/content/666/the-korean-crown"><img src="./images/Stats1.PNG">
+      <div class="desc">The Korean Crown</div></a>
+    </div>
+  <div class="gallery">
+    <a href="https://splyce.gg/content/646/splyce-insights---solar"><img src="./images/Splyce 2.PNG">
+      <div class="desc">Splyce Insights - Solar</div></a>
+    </div>
+</div>
+
+</html>
+
+
+<style>
+ img.logo{
+	float: right;
+ 	height: 200px;
+ 	width: 200px;
+  margin-left: -200px;
+  margin-right: 1px;
+  opacity: 0.5;
+  z-index: -4;
+}
+ img.player{
+	height: 200px;
+	width: 200px;
+  margin: 20px;
+  margin-left: 1px;
+	float: left;
+  display: flex;
+}
+h3{
+ font-weight: bold;
+ color: black;
+ font-size: 30pt;
+ z-index: 1;
+}
+h4{
+  font-family: starfont;
+  text-align: center;
+  font-size: 18pt;
+  margin: 10px;
+  text-decoration: overline underline;
+  display: block;
+}
+p{
+ color: black;
+ font-size: 14pt;
+ z-index: 1;
+}
+div.bio{
+  padding: 0px;
+  margin: 0px;
+  height: 240px;
+  width: 100%;
+  display: block;
+}
+div.stats{
+  padding: 0px;
+  margin: 0px;
+  width 100%;
+  height: 230px;
+  display: block;
+}
+div.news{
+ margin-top: 50px;
+ display: block;
+ width 100%;
+ height: auto;
+}
+div.basics{
+  width: 19%;
+  height: 100%;
+  float: left;
+  border: 1px solid grey;
+}
+div.matchups{
+  width: 79%;
+  height: 100%;
+  float: right;
+  border: 1px solid grey;
+}
+table.basics{
+	margin: 0px;
+  width: 100%;
+}
+table.basics tr{
+}
+table.basics th{
+  font-size: 15pt;
+  color: #333;
+}
+table.basics td{
+	text-align: center;
+  font-size: 14pt;
+	color: black;
+}
+table.matchups{
+	margin-top: 10px;
+  width: 100%;
+  height: auto;
+}
+table.matchups tr{
+	font-size: 15pt;
+	color: #977700;
+}
+table.matchups th{
+  font-size: 15pt;
+  color: #333;
+}
+table.matchups td{
+	text-align: center;
+  font-size: 14pt;
+	color: black;
+}
+img.rSymbol{
+  width: 18px;
+  height: 18px;
+  margin:0px;
+  padding:0px;
+}
+div.gallery {
+    width: 250px;
+    height: 210px;
+}
+div.gallery img {
+    width: 190px;
+}
+</style>
+
