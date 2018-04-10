@@ -16,13 +16,11 @@
 </ul>
 
 
+<h3> Jun "TY" Tae Yang - Team Splyce </h3>
 <div class="bio">
  <img class="player" src="images/ty.jpg"></img>
- <a href = splyce.html>
-   <img class="logo"  src="images/splyce.jpg"></img>
- </a>
- <h3> Jun "TY" Tae Yang - Team Splyce </h3>
- <p> Entering the professional gaming world at the age of 12, TY was one of the youngest professional gamers ever. After an up and down start to his career, TY found himself with enough points after a solid 2016 year to earn himself a spot at the 2016 playoffs at BlizzCon. </p>
+ <img class="team_logo"  src="images/splyce.jpg"></img>
+ <p>Entering the professional gaming world at the age of 12, TY was one of the youngest professional gamers ever. After an up and down start to his career, TY found himself with enough points after a solid 2016 year to earn himself a spot at the 2016 playoffs at BlizzCon. </p>
 </div>
 
 <h3>Statistics</h3>
@@ -78,7 +76,7 @@
 
 
 <div class="news">
-  <h4>Videos</h4>
+  <h3>Videos</h3>
   <div class="gallery">
     <a href="https://splyce.gg/content/677/the-battle-for-blizzcon-stats-and-ty"><img src="images/splyce.PNG">
       <div class="desc">The Battle for BlizzCon: Stats and TY</div></a>
@@ -97,33 +95,15 @@
 
 
 <style>
- img.logo{
-	float: right;
- 	height: 200px;
- 	width: 200px;
-  margin-left: -200px;
-  margin-right: 1px;
-  opacity: 0.5;
-  z-index: -4;
-}
-
- img.player{
-	height: 200px;
-	width: 200px;
-  margin: 20px;
-  margin-left: 1px;
-	float: left;
-  display: flex;
-}
-
 h3{
   font-family: starfont;
   text-decoration: underline;
- font-weight: bold;
- margin-bottom: 10px;
- color: black;
- font-size: 25pt;
- z-index: 1;
+  margin-bottom: 0px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: black;
+  font-size: 25pt;
+  z-index: 100;
 }
 h4{
   color: black;
@@ -133,17 +113,19 @@ h4{
   margin: 10px;
   text-decoration: overline underline;
   display: block;
+  z-index: 10;
 }
 p{
  color: black;
- font-size: 14pt;
- z-index: 1;
+ margin-top: 15px;
+ font-size: 18pt;
+ z-index: 10;
 }
 
 div.bio{
   padding: 0px;
   margin: 0px;
-  min-height: 240px;
+  min-height: 200px;
   width: 100%;
   display: block;
 }
@@ -151,8 +133,8 @@ div.stats{
   background-color: #e6e6e6;
   border-radius: 25px;
   padding: 8px;
-  margin: 0px;
-  width: 98%;
+  margin: 10px;
+  width: 97%;
   display: inline-block;
 }
 div.news{
@@ -218,7 +200,26 @@ table.matchups td{
   font-size: 14pt;
 	color: black;
 }
+img.team_logo{
+ float: right;
+ height: 200px;
+ width: 200px;
+ margin-top: 0px;
+ margin-left: -200px;
+ margin-right: 1px;
+ opacity: 0.4;
+ z-index: 1000;
+}
 
+img.player{
+ height: 200px;
+ width: 200px;
+ margin: 20px;
+ margin-top: 0px;
+ margin-left: 1px;
+ float: left;
+ display: flex;
+}
 img.rSymbol{
   width: 18px;
   height: 18px;
