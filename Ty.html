@@ -8,6 +8,7 @@
 
 <h1><a href="esportsmain.html">ESports Stats</a></h1>
 <ul>
+    <li><a href="esportsmain.html"> eSports</a></li>
     <li><a href="home.html"> Home </a> </li>
     <li><a class ="active" href="teams.html"> Teams</a> </li>
     <li><a href="rankings.html"> Rankings</a> </li>
@@ -18,12 +19,13 @@
 
 <h3> Jun "TY" Tae Yang - Team Splyce </h3>
 <div class="bio">
- <img class="player" src="images/ty.jpg"></img>
- <img class="team_logo"  src="images/splyce.jpg"></img>
- <p>Entering the professional gaming world at the age of 12, TY was one of the youngest professional gamers ever. After an up and down start to his career, TY found himself with enough points after a solid 2016 year to earn himself a spot at the 2016 playoffs at BlizzCon. </p>
+ <div class="element"> <img class="player" src="images/ty.jpg"></img></div>
+ <div class="text_element">Entering the professional gaming world at the age of 12, TY was one of the youngest professional gamers ever. After an up and down start to his career, TY found himself with enough points after a solid 2016 year to earn himself a spot at the 2016 playoffs at BlizzCon. </div>
+ <div class="element"><a href="splyce.html"><img class="team_logo" src="images/splyce.jpg"></img></div>
+
 </div>
 
-
+<h3>Statistics</h3>
 <div class="stats">
   <div class="basics">
     <table class="basics">
@@ -78,15 +80,15 @@
 <div class="news">
   <h3>Videos</h3>
   <div class="gallery">
-    <a href="https://splyce.gg/content/677/the-battle-for-blizzcon-stats-and-ty"><img src="images/splyce.PNG">
+    <a href="https://splyce.gg/content/677/the-battle-for-blizzcon-stats-and-ty" target="_blank"><img src="images/splyce.PNG">
       <div class="desc">The Battle for BlizzCon: Stats and TY</div></a>
   </div>
   <div class="gallery">
-    <a href="https://splyce.gg/content/666/the-korean-crown"><img src="./images/Stats1.PNG">
+    <a href="https://splyce.gg/content/666/the-korean-crown" target="_blank"><img src="./images/Stats1.PNG">
       <div class="desc">The Korean Crown</div></a>
     </div>
   <div class="gallery">
-    <a href="https://splyce.gg/content/646/splyce-insights---solar"><img src="./images/Splyce 2.PNG">
+    <a href="https://splyce.gg/content/646/splyce-insights---solar" target="_blank"><img src="./images/Splyce 2.PNG">
       <div class="desc">Splyce Insights - Solar</div></a>
     </div>
 </div>
@@ -115,23 +117,29 @@ h4{
   display: block;
   z-index: 10;
 }
-p{
- color: black;
- margin-top: 15px;
- font-size: 18pt;
- z-index: 10;
+div.element{
+ //color: black;
+ //margin-top: 15px;
+ //font-size: 18pt;
+ //z-index: 10;
+ width: 16%;
+ float: left;
 }
-
+div.text_element{
+ color: black;
+ font-size:18pt;
+ width: 68%;
+ float: left;
+}
 div.bio{
-  padding: 0px;
-  margin: 0px;
-  min-height: 200px;
+  //padding: 0px;
+  //margin: 0px;
+  //min-height: 200px;
   width: 100%;
-  display: block;
+  //display: block;
 }
 div.stats{
   background-color: #e6e6e6;
-  box-shadow: 10px 10px #333;
   border-radius: 25px;
   padding: 8px;
   margin: 10px;
@@ -208,8 +216,8 @@ img.team_logo{
  margin-top: 0px;
  margin-left: -200px;
  margin-right: 1px;
- opacity: 0.4;
- z-index: 1000;
+ //opacity: 0.4;
+ //z-index: 1000;
 }
 
 img.player{
