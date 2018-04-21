@@ -20,9 +20,8 @@
 <h3> Jun "TY" Tae Yang - Team Splyce </h3>
 <div class="bio">
  <div class="element"> <img class="player" src="images/ty.jpg"></img></div>
- <div class="text_element">Entering the professional gaming world at the age of 12, TY was one of the youngest professional gamers ever. After an up and down start to his career, TY found himself with enough points after a solid 2016 year to earn himself a spot at the 2016 playoffs at BlizzCon. </div>
+ <div class="element_text"><p>Entering the professional gaming world at the age of 12, TY was one of the youngest professional gamers ever. After an up and down start to his career, TY found himself with enough points after a solid 2016 year to earn himself a spot at the 2016 playoffs at BlizzCon. </p></div>
  <div class="element"><a href="splyce.html"><img class="team_logo" src="images/splyce.jpg"></img></div>
-
 </div>
 
 <h3>Statistics</h3>
@@ -117,34 +116,42 @@ h4{
   display: block;
   z-index: 10;
 }
+
 div.element{
- //color: black;
- //margin-top: 15px;
- //font-size: 18pt;
- //z-index: 10;
- width: 16%;
+ margin: 0px;
+ padding: 0px;
+ margin-top: 15px;
+ width: 18%;
+ min-width: 210px;
+ height: 200px;
  float: left;
+ display: block;
 }
-div.text_element{
+div.element_text{
+  float: left;
+  width: 80%;
+  display: block;
+}
+p{
  color: black;
  font-size:18pt;
- width: 68%;
- float: left;
+ text-align: left;
 }
 div.bio{
-  //padding: 0px;
-  //margin: 0px;
-  //min-height: 200px;
+  padding: 0px;
+  margin: 0px;
+  min-height: 200px;
   width: 100%;
-  //display: block;
+  display: flex;
 }
 div.stats{
   background-color: #e6e6e6;
   border-radius: 25px;
+  box-shadow: 5px 10px #333;
   padding: 8px;
   margin: 10px;
   width: 97%;
-  display: inline-block;
+  display: flex;
 }
 div.news{
  margin-top: 70px;
