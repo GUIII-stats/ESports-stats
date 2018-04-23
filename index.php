@@ -1,4 +1,5 @@
-<?php header( 'Location: ./esportsmain.html' ) ;  ?>
+<?php header( 'Location: ./esportsmain.html' ) ;
+
 
 $dbopts = parse_url(getenv('DATABASE_URL'));
 $app->register(new Csanquer\Silex\PdoServiceProvider\Provider\PDOServiceProvider('pdo'),
@@ -28,3 +29,6 @@ $app->get('/db/', function() use($app) {
     'names' => $names
   ));
 });
+
+
+?>
