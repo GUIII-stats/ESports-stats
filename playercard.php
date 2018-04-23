@@ -19,14 +19,14 @@
 </ul>
 
 <?php
-$db = parse_url(getenv("DATABASE_URL"));
-$db["path"] = ltrim($db["path"], "/");
+$db = new PDO('pgsql:host=localhost');
+$statement = $db->prepare("SELECT * FROM players");
+$statement->execute();
+$row = $statement->fetch();
 
-$query = 'SELECT * FROM players WHERE player = 'Kim "Stats" Dae Yeob - Team Splyce'';
-$result = pg_query($query) or die('Query failed: ' . pg_last_error());
-$row = pg_fetch_row($result);
 
-echo "<h3>" . $row[12]. " </h3>" ;
+echo "<h3>" . $row[1] . " fuck </h3>";
+
 ?>
 
 <div class="bio">
