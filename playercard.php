@@ -17,9 +17,18 @@
     <li class="search"><input type="text" name="search" placeholder="Search.."></li>
     <li class="title"><h2>StarCraft II</h2></li>
 </ul>
+
 <?php
-print "<h3> Jun TY Tae Yang - Team Splyce </h3>" ;
+$db = parse_url(getenv("DATABASE_URL"));
+$db["path"] = ltrim($db["path"], "/");
+
+$query = 'SELECT * FROM players WHERE player = 'Kim "Stats" Dae Yeob - Team Splyce'';
+$result = pg_query($query) or die('Query failed: ' . pg_last_error());
+$row = pg_fetch_row($result);
+
+echo "<h3>" . $row[12]. " </h3>" ;
 ?>
+
 <div class="bio">
  <div class="element"> <img id="player_img" class="player" src="images/ty.jpg"></img></div>
  <div class="element_text"><p>Entering the professional gaming world at the age of 12, TY was one of the youngest professional gamers ever. After an up and down start to his career, TY found himself with enough points after a solid 2016 year to earn himself a spot at the 2016 playoffs at BlizzCon. </p></div>
