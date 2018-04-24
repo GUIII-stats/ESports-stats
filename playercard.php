@@ -26,6 +26,8 @@ $result = pg_query($dbconn, $query);
 $row = pg_fetch_row($result);
 
 echo "<h3> $row[12] </h3>";
+$row = pg_fetch_row($result);
+echo "<h3> $row[12] </h3>";
 
 ?>
 
