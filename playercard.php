@@ -20,12 +20,12 @@
 
 <?php
 $dbconn = pg_connect("host=ec2-54-225-96-191.compute-1.amazonaws.com port=5432 dbname=dc6t0fv0p47let user=zzlazrcayibdym password=ffe9d6e2a22c89e4b2b138dffa35fc438f1b3ca5ac4cac31d150c5ba729c398c");
-$query = "SELECT * FROM players WHERE player = 'Jun \"TY\" Tae Yang - Team Splyce'";
+$query = "SELECT * FROM players WHERE race = 'protoss'";
 
 $result = pg_query($dbconn, $query);
 $row = pg_fetch_row($result);
 
-echo "<h3> $result[12] </h3>";
+echo "<h3> $row[12] </h3>";
 
 ?>
 
