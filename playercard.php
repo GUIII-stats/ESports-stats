@@ -36,9 +36,9 @@ echo "<h3> $row[12] </h3>";
 
 <div class="bio">
 <?php
- echo "<div class=\"element\"> <img id=\"player_img\" class=\"player\" src=\"$row[0]\"></img></div>"
- echo "<div class=\"element_text\"><p>$row[1]</p></div>"
- echo "<div class=\"element\"><a href=\"splyce.html\"><img class=\"team_logo\" src=\"$row[2]\"></img></div>"
+ echo "<div class=\"element\"> <img id=\"player_img\" class=\"player\" src=\"$row[0]\"></img></div>";
+ echo "<div class=\"element_text\"><p>$row[1]</p></div>";
+ echo "<div class=\"element\"><a href=\"splyce.html\"><img class=\"team_logo\" src=\"$row[2]\"></img></div>";
  ?>
 </div>
 
@@ -55,14 +55,14 @@ echo "<h3> $row[12] </h3>";
       </tr>
       <tr>
         <?php
-        echo "<td>$row[3]</td>"
+        echo "<td>$row[3]</td>";
         ?>
       <tr>
     		<th> World Ranking </th>
       </tr>
       <tr>
         <?php
-        echo "<td>$row[4]</td>"
+        echo "<td>$row[4]</td>";
         ?>
       </tr>
       <tr>
@@ -70,7 +70,7 @@ echo "<h3> $row[12] </h3>";
     	</tr>
       <tr>
         <?php
-        echo "<td>$row[5]</td>"
+        echo "<td>$row[5]</td>";
         ?>
       </tr>
     </table>
@@ -85,9 +85,9 @@ echo "<h3> $row[12] </h3>";
       </tr>
       <tr>
         <?php
-    		echo "<td> $row[6] </td>"
-    		echo "<td> $row[7] </td>"
-    		echo "<td> $row[8] </td>"
+    		echo "<td> $row[6] </td>";
+    		echo "<td> $row[7] </td>";
+    		echo "<td> $row[8] </td>";
         ?>
       </tr>
       <tr>
@@ -97,9 +97,9 @@ echo "<h3> $row[12] </h3>";
       </tr>
       <tr>
         <?php
-        echo "<td> $row[9] </td>"
-        echo "<td> $row[10] </td>"
-        echo "<td> $row[11] </td>"
+        echo "<td> $row[9] </td>";
+        echo "<td> $row[10] </td>";
+        echo "<td> $row[11] </td>";
         ?>
       </tr>
     </table>
