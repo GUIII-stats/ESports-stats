@@ -20,7 +20,7 @@
 
 <?php
 $dbconn = pg_connect("host=ec2-54-225-96-191.compute-1.amazonaws.com port=5432 dbname=dc6t0fv0p47let user=zzlazrcayibdym password=ffe9d6e2a22c89e4b2b138dffa35fc438f1b3ca5ac4cac31d150c5ba729c398c");
-$query = "SELECT * FROM players WHERE race = 'Protoss'";
+$query = "SELECT * FROM players WHERE player_id = 'ty'";
 
 $result = pg_query($dbconn, $query);
 $row = pg_fetch_row($result);
@@ -31,7 +31,9 @@ echo "<h3> $row[12] </h3>";
 
 
 <div class="bio">
- <div class="element"> <img id="player_img" class="player" src="images/ty.jpg"></img></div>
+<?php
+ echo "<div class=\"element\"> <img id=\"player_img\" class=\"player\" src=\"$row[0]\"></img></div>"
+ ?>
  <div class="element_text"><p>Entering the professional gaming world at the age of 12, TY was one of the youngest professional gamers ever. After an up and down start to his career, TY found himself with enough points after a solid 2016 year to earn himself a spot at the 2016 playoffs at BlizzCon. </p></div>
  <div class="element"><a href="splyce.html"><img class="team_logo" src="images/splyce.jpg"></img></div>
 </div>
