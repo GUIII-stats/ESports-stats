@@ -38,7 +38,7 @@ echo "<h3> $row[12] </h3>";
 <?php
  echo "<div class=\"element\"> <img id=\"player_img\" class=\"player\" src=\"$row[0]\"></img></div>";
  echo "<div class=\"element_text\"><p>$row[1]</p></div>";
- echo "<div class=\"element\"><a href=\"splyce.html\><img class=\"team_logo\" src=\"$row[2]\"></a></img></div>";
+ echo "<div class=\"element\"><a href=\"splyce.html\"><img class=\"team_logo\" src=\"$row[2]\"></a></img></div>";
  ?>
 </div>
 
