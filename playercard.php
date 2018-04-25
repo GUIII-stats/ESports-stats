@@ -19,8 +19,12 @@
 </ul>
 
 <?php
+//here is the money code
+//all players are going to be accessed through "player_id"
+//which will just be their gamer name in all lowercase
+
 $dbconn = pg_connect("host=ec2-54-225-96-191.compute-1.amazonaws.com port=5432 dbname=dc6t0fv0p47let user=zzlazrcayibdym password=ffe9d6e2a22c89e4b2b138dffa35fc438f1b3ca5ac4cac31d150c5ba729c398c");
-$query = "SELECT * FROM players WHERE player_id = 'ty'";
+$query = "SELECT * FROM players WHERE player_id = 'ty'"; //replace ty with variable
 
 $result = pg_query($dbconn, $query);
 $row = pg_fetch_row($result);
@@ -80,9 +84,11 @@ echo "<h3> $row[12] </h3>";
         <th> vs. Zerg </th>
       </tr>
       <tr>
-    		<td> 2-0 </td>
-    		<td> 7-1 </td>
-    		<td> 1-2 </td>
+        <?php
+    		echo "<td> $row[6] </td>"
+    		echo "<td> $row[7] </td>"
+    		echo "<td> $row[8] </td>"
+        ?>
       </tr>
       <tr>
         <th> Current Streak </th>
@@ -90,9 +96,11 @@ echo "<h3> $row[12] </h3>";
         <th> Last Match </th>
       </tr>
       <tr>
-        <td> W2 </td>
-        <td> TBD </td>
-        <td> vs. GuMiho (Terran, W2-0) </td>
+        <?php
+        echo "<td> $row[9] </td>"
+        echo "<td> $row[10] </td>"
+        echo "<td> $row[11] </td>"
+        ?>
       </tr>
     </table>
   </div>
