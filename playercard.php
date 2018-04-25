@@ -33,9 +33,9 @@ echo "<h3> $row[12] </h3>";
 <div class="bio">
 <?php
  echo "<div class=\"element\"> <img id=\"player_img\" class=\"player\" src=\"$row[0]\"></img></div>"
+ echo "<div class=\"element_text\"><p>$row[1]</p></div>"
+ echo "<div class=\"element\"><a href=\"splyce.html\"><img class=\"team_logo\" src=\"$row[2]\"></img></div>"
  ?>
- <div class="element_text"><p>Entering the professional gaming world at the age of 12, TY was one of the youngest professional gamers ever. After an up and down start to his career, TY found himself with enough points after a solid 2016 year to earn himself a spot at the 2016 playoffs at BlizzCon. </p></div>
- <div class="element"><a href="splyce.html"><img class="team_logo" src="images/splyce.jpg"></img></div>
 </div>
 
 
@@ -50,18 +50,24 @@ echo "<h3> $row[12] </h3>";
     		<th> Race </th>
       </tr>
       <tr>
-        <td><img class="rSymbol" src="./images/zerg_logo.svg"> Zerg</td>
+        <?php
+        echo "<td>$row[3]</td>"
+        ?>
       <tr>
     		<th> World Ranking </th>
       </tr>
       <tr>
-        <td>5th</td>
+        <?php
+        echo "<td>$row[4]</td>"
+        ?>
       </tr>
       <tr>
         <th> Longest Win Streak </th>
     	</tr>
       <tr>
-        <td>11</td>
+        <?php
+        echo "<td>$row[5]</td>"
+        ?>
       </tr>
     </table>
   </div>
