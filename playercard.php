@@ -25,9 +25,8 @@ $query = "SELECT * FROM players WHERE player = 'Jun \"TY\" Tae Yang - Team Splyc
 $result = pg_query($dbconn, $query);
 $row = pg_fetch_row($result);
 
-echo "<h3> $row[12] </h3>";
+echo "<h3> $result[12] </h3>";
 
-$variable = "hello"
 ?>
 
 
@@ -36,9 +35,7 @@ $variable = "hello"
  <div class="element_text"><p>Entering the professional gaming world at the age of 12, TY was one of the youngest professional gamers ever. After an up and down start to his career, TY found himself with enough points after a solid 2016 year to earn himself a spot at the 2016 playoffs at BlizzCon. </p></div>
  <div class="element"><a href="splyce.html"><img class="team_logo" src="images/splyce.jpg"></img></div>
 </div>
-<?php
-echo $variable
-?>
+
 
 
 
