@@ -98,8 +98,8 @@ echo "<h3> $row[12] </h3>";
       <tr>
         <?php
         echo "<td> $row[9] </td>";
-        echo "<td> $row[10] </td>";
-        echo "<td> $row[11] </td>";
+        echo $row[10];
+        echo $row[11];
         ?>
       </tr>
     </table>
@@ -168,7 +168,7 @@ div.element_text{
 }
 p{
  color: black;
- font-size:13pt;
+ font-size:14pt;
  text-align: left;
 }
 div.bio{
