@@ -45,7 +45,7 @@ echo "<h3> $row[12] </h3>";
 
 
 
-<h3>Statistics</h3>
+<h3>2018 Statistics</h3>
 <div class="stats">
   <div class="basics">
     <table class="basics">
