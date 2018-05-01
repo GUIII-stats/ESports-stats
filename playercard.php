@@ -37,7 +37,7 @@ echo "<h3> $row[12] </h3>";
 <div class="bio">
 <?php
  echo "<div class=\"element\"> <img id=\"player_img\" class=\"player\" src=\"$row[0]\"></img></div>";
- echo "<div class=\"element_text\"><p>$row[1]</p></div>";
+ echo "<div class=\"element_text\"><p><span style=\"display:inline-block; width: YOURWIDTH;\"></span>$row[1]</p></div>";
  echo "<div class=\"element\"><a href=\"splyce.html\"><img class=\"team_logo\" src=\"$row[2]\"></a></img></div>";
  ?>
 </div>
@@ -168,7 +168,7 @@ div.element_text{
 }
 p{
  color: black;
- font-size:12pt;
+ font-size:13pt;
  text-align: left;
 }
 div.bio{
