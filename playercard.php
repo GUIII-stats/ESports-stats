@@ -168,7 +168,7 @@ div.element_text{
 }
 p{
  color: black;
- font-size:18pt;
+ font-size:16pt;
  text-align: left;
 }
 div.bio{
