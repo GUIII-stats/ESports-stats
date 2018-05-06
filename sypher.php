@@ -8,7 +8,7 @@
 
 <?php
         $ch = curl_init();
-        curl_setopt($ch, CURLOPT_URL, "https://api.fortnitetracker.com/v1/profile/pc/Ninja");
+        curl_setopt($ch, CURLOPT_URL, "https://api.fortnitetracker.com/v1/profile/pc/SypherPK");
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
         curl_setopt($ch, CURLOPT_HEADER, FALSE);
         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
@@ -56,11 +56,11 @@
 </ul>
 
 
-<h3> Tyler "Ninja" Blevins </h3>
+<h3> Ali "Sypher" </h3>
 <div class="bio">
- <div class="element"> <img class="player" src="images/tyler.jpg"></img></div>
- <div class="element_text"><p>Ninja is the best Fortnite player in the world. He is ridiculous, an excellent builder, and plays often with other top streamers like Dr. Lupo, Myth, and TimTheTatMan. He set the Twitch record for most concurrent viewers on a live stream when he played Duos with Drake, then squads with Drake, Travis Scott, and JuJu Smith-Schuster. He later broke his own record during his event in Las Vegas.</p></div>
- <div class="element"><a href="fortnite_players.html"><img class="team_logo" src="images/ninja.png"></img></div>
+ <div class="element"> <img class="player" src="images/pk.jpg"></img></div>
+ <div class="element_text"><p>A growing streamer in the Fortnite community, Sypher is among the top players in the world when it comes to both wins and kills in Fortnite. A younger streamer, Sypher brings a unique play style that can best be described as cautious aggression. Sypher is best known for his enjoyment of trap kills.</p></div>
+ <div class="element"><a href="fortnite_players.html"><img class="team_logo" src="images/sypher.jpg"></img></div>
 </div>
 
 <h3>Statistics</h3>

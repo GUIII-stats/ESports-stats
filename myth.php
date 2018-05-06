@@ -8,7 +8,7 @@
 
 <?php
         $ch = curl_init();
-        curl_setopt($ch, CURLOPT_URL, "https://api.fortnitetracker.com/v1/profile/pc/Ninja");
+        curl_setopt($ch, CURLOPT_URL, "https://api.fortnitetracker.com/v1/profile/pc/TSM_Myth");
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
         curl_setopt($ch, CURLOPT_HEADER, FALSE);
         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
@@ -56,11 +56,11 @@
 </ul>
 
 
-<h3> Tyler "Ninja" Blevins </h3>
+<h3> Ali "Myth" Kabbani </h3>
 <div class="bio">
- <div class="element"> <img class="player" src="images/tyler.jpg"></img></div>
- <div class="element_text"><p>Ninja is the best Fortnite player in the world. He is ridiculous, an excellent builder, and plays often with other top streamers like Dr. Lupo, Myth, and TimTheTatMan. He set the Twitch record for most concurrent viewers on a live stream when he played Duos with Drake, then squads with Drake, Travis Scott, and JuJu Smith-Schuster. He later broke his own record during his event in Las Vegas.</p></div>
- <div class="element"><a href="fortnite_players.html"><img class="team_logo" src="images/ninja.png"></img></div>
+ <div class="element"> <img class="player" src="images/ali.jpg"></img></div>
+ <div class="element_text"><p>Myth is one of the youngest top streamers in the Fortnite community, yet is credited with creating a lot of the building strategies that have become a part of the meta of the game. Known for his conservative play style, Myth has the ability to beat you in a variety of ways.</p></div>
+ <div class="element"><a href="fortnite_players.html"><img class="team_logo" src="images/myth.png"></img></div>
 </div>
 
 <h3>Statistics</h3>
