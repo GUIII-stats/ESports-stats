@@ -125,20 +125,43 @@
 </div>
 
 
-<div class="news">
+
+<div id = "yootube">
   <h3>Videos</h3>
-  <div class="gallery">
-    <a href="https://splyce.gg/content/677/the-battle-for-blizzcon-stats-and-ty" target="_blank"><img src="images/splyce.PNG">
-      <div class="desc">The Battle for BlizzCon: Stats and TY</div></a>
-  </div>
-  <div class="gallery">
-    <a href="https://splyce.gg/content/666/the-korean-crown" target="_blank"><img src="./images/Stats1.PNG">
-      <div class="desc">The Korean Crown</div></a>
-    </div>
-  <div class="gallery">
-    <a href="https://splyce.gg/content/646/splyce-insights---solar" target="_blank"><img src="./images/Splyce 2.PNG">
-      <div class="desc">Splyce Insights - Solar</div></a>
-    </div>
+<!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
+<div id="player">
+</div>
+
+<script>
+    // 2. This code loads the IFrame Player API code asynchronously.
+    var tag = document.createElement('script');
+    
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    
+    // 3. This function creates an <iframe> (and YouTube player)
+    //    after the API code downloads.
+    var player;
+    function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+                               height: '290',
+                               width: '390',
+                               playerVars:
+                               {
+                               listType: 'playlist',
+                               list: 'PL_LvhWhUYJCwnxi6UFs13xHqlJijYKX1k'
+                               }
+                               
+                               
+                               });
+                          
+    }
+// 4. The API will call this function when the video player is ready.
+function onPlayerReady(event) {
+    event.target.playVideo();
+}
+</script>
 </div>
 
 </html>
@@ -217,6 +240,9 @@ div.basics{
   padding-right: 10px;
   border-right: 5px inset;
   border-color: #333;
+}
+.yootube{
+  float: right;
 }
 div.matchups{
   margin: 0px;
